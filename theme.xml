@@ -192,6 +192,8 @@ Automatic Game Collections: LAST PLAYED, FAVORITES, 2 PLAYERS, 4 PLAYERS, NEVER 
 		<image name="background" extra="true">
 			<path>./${system.theme}/bg.png</path>
 			<zIndex>2</zIndex>
+			<pos>0 0</pos>
+			<size>1 1</size>
 		</image>		
 		
 		<text name="systemtxt" extra="true">
@@ -794,4 +796,5 @@ Automatic Game Collections: LAST PLAYED, FAVORITES, 2 PLAYERS, 4 PLAYERS, NEVER 
 		<include name="On">./darkmode.xml</include>
 	</subset>		
 			
+
 </theme>
