@@ -1,6 +1,6 @@
 <!--
 theme name:     CleanShelf
-version:        0.0.2
+version:        0.0.3
 author:         fraygox (CleanShelf changes), Sheezie / newFUNKYmode (Sheezie2Clean)
 email:          
 website:        
@@ -890,7 +890,7 @@ Automatic Game Collections: LAST PLAYED, FAVORITES, 2 PLAYERS, 4 PLAYERS, NEVER 
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<size>0.5745 0.96</size>
-			<scale>1.5</scale>
+			<!-- no <scale>: it scales the element itself and pushes the video over the text at x=0.6 -->
 			<delay>0.5</delay>
 		</video>	
 		

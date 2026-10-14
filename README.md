@@ -8,7 +8,7 @@ the gaps that newer Batocera versions opened up.
 If you like how it looks, the credit goes to Sheezie. See Sheezie2Clean's page for the
 original screenshots.
 
-Version 0.0.2. Tested on Batocera 43.1 (x86_64).
+Version 0.0.3. Tested on Batocera 43.1 (x86_64).
 
 ## What changed from Sheezie2Clean
 
@@ -30,7 +30,8 @@ Version 0.0.2. Tested on Batocera 43.1 (x86_64).
 
 ## Install
 
-1. Copy this folder to `/userdata/themes/CleanShelf` on your Batocera box (for example
+1. Download **CleanShelf.zip** from the release (not "Source code", which unpacks to a
+   versioned folder name) and unpack it, or copy this folder, to `/userdata/themes/CleanShelf` on your Batocera box (for example
    through the `share` network folder, `themes/CleanShelf`).
 2. In Batocera: **Main menu > User interface settings > Theme set > CleanShelf**.
 3. Optional: **Theme configuration > Dark mode**.
