@@ -1,0 +1,37 @@
+CleanShelf - a Batocera theme
+=============================
+
+CleanShelf is a modified version of "Sheezie2Clean" by Sheezie (newFUNKYmode),
+https://github.com/Sheezie/Sheezie2Clean
+
+Licence
+-------
+
+Sheezie2Clean declares its licence as "creative commons CC-BY-NC-SA" (theme.xml
+header) and states that the theme is not authorized for commercial use. It does
+not name a version of that licence. Everything taken from Sheezie2Clean stays
+under those terms, as Sheezie declared them.
+
+CleanShelf's own additions and changes (the generated system folders and
+wordmarks, the fallback views, the tools/ scripts, the Pygame artwork, the
+"RomM Detailed" view and the documentation) are offered under the Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International licence
+(CC BY-NC-SA 4.0): https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+In short: you may share and adapt this theme if you give credit, do not use it
+commercially, and release your changes under the same terms.
+
+THIS THEME IS NOT AUTHORIZED FOR COMMERCIAL USE.
+
+Credits
+-------
+
+- Sheezie (newFUNKYmode): Sheezie2Clean, its layout, artwork and system pages.
+- Sheezie2Clean was itself based on "Carbon" by Eric Hettervik, "BaseVid" by
+  Matt Kennedy, "ARTFLIX" by Alekfull and "Retrofix" by 20goto10.
+- Most system logos were created by Dan Patrick (as noted by Sheezie2Clean):
+  https://archive.org/details/console-logos-professionally-redrawn-plus-official-versions
+- Fira Sans (_inc/fonts) by Carrois Apostrophe for Mozilla, licensed under the
+  SIL Open Font License 1.1: https://openfontlicense.org
+- System and console names, logos and trademarks belong to their respective
+  owners; they are used here only to identify the systems.

@@ -34,6 +34,14 @@
 		<text name="systemName" extra="true">
 			<color>ffffff</color>
 		</text>
+
+		<text name="logoText">
+			<color>ffffff</color>
+		</text>
+
+		<image name="background_art" extra="true">
+			<opacity>0.85</opacity>
+		</image>
 		
 			<image name="systemInfo_background" extra="true">
 				<path>./_inc/images/whitebg.jpg</path>
@@ -100,6 +108,10 @@
 			<origin>0.5 0.5</origin>
 		</image>			
 
+		<text name="logoText">
+			<color>ffffff</color>
+		</text>
+
 		<textlist name="gamelist">
 			<selectorColor>000000</selectorColor>
 			<selectedColor>ffffff</selectedColor>
@@ -155,6 +167,10 @@
 			<maxSize>0.1 0.045</maxSize>
 			<origin>0.5 0.5</origin>
 		</image>			
+
+		<text name="logoText">
+			<color>ffffff</color>
+		</text>
 		
 		<image name="gridgamelistbg2" extra="true">	
 			<color>000000</color>
