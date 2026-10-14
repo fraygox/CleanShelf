@@ -1,13 +1,17 @@
 name: Release
 
 # GitHub's automatic "Source code" archives unpack to CleanShelf-<version>/, which does not
-# replace an installed theme cleanly. This attaches CleanShelf.zip, which always unpacks to
-# CleanShelf/, to every release.
+# replace an installed theme cleanly. Pushing a v* tag creates the release and attaches
+# CleanShelf.zip, which always unpacks to CleanShelf/. To (re)build one for an existing tag,
+# run this workflow by hand and give it the tag.
 on:
-  release:
-    types: [published]
   push:
     tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing tag to release (e.g. v0.0.3)
+        required: true
 
 permissions:
   contents: write
@@ -17,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag || github.ref }}
       - name: Build CleanShelf.zip
         run: |
           mkdir -p /tmp/pkg
@@ -26,6 +32,7 @@ jobs:
       - name: Attach to the release
         env:
           GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag || github.ref_name }}
         run: |
-          gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1 || gh release create "$GITHUB_REF_NAME" --title "CleanShelf ${GITHUB_REF_NAME#v}" --notes ""
-          gh release upload "$GITHUB_REF_NAME" CleanShelf.zip --clobber
+          gh release view "$TAG" >/dev/null 2>&1 || gh release create "$TAG" --verify-tag --title "CleanShelf ${TAG#v}" --generate-notes
+          gh release upload "$TAG" CleanShelf.zip --clobber
