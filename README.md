@@ -8,7 +8,7 @@ the gaps that newer Batocera versions opened up.
 If you like how it looks, the credit goes to Sheezie. See Sheezie2Clean's page for the
 original screenshots.
 
-Version 0.0.1. Tested on Batocera 43.1 (x86_64).
+Version 0.0.2. Tested on Batocera 43.1 (x86_64).
 
 ## What changed from Sheezie2Clean
 
@@ -22,8 +22,6 @@ Version 0.0.1. Tested on Batocera 43.1 (x86_64).
   panel with random art from that system's games (or its wordmark), the coloured list
   panel in the basic, detailed and grid views, and a readable carousel and header label.
 * **Mega CD** (Batocera 43's name for `segacd`) uses Sheezie's Sega CD artwork.
-* **Video Grid:** the video no longer grows over the metadata column (`<scale>` scales
-  the whole element since Batocera 29).
 * **Splash:** the loading text is white, so it is visible on the black splash.
 * **Menu switches:** Batocera 43 draws the theme's star switches as a squashed sliver, so
   CleanShelf leaves the switches to ES.
